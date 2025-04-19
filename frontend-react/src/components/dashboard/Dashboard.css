@@ -1,0 +1,139 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dashboard-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.order-actions-section,
+.order-status-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.order-actions-section h2,
+.order-status-section h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.action-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.pack-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.pack-button:hover:not(:disabled) {
+    background-color: #1976D2;
+}
+
+.ship-button {
+    background-color: #FF9800;
+    color: white;
+}
+
+.ship-button:hover:not(:disabled) {
+    background-color: #F57C00;
+}
+
+.deliver-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.deliver-button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+.status-messages {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.status-message {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-left: 4px solid;
+}
+
+.status-created {
+    border-left-color: #2196F3;
+    background-color: #E3F2FD;
+}
+
+.status-packed {
+    border-left-color: #FF9800;
+    background-color: #FFF3E0;
+}
+
+.status-shipped {
+    border-left-color: #9C27B0;
+    background-color: #F3E5F5;
+}
+
+.status-delivered {
+    border-left-color: #4CAF50;
+    background-color: #E8F5E9;
+}
+
+.status-message p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.status-message p:first-child {
+    font-weight: 600;
+} 
